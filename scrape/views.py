@@ -294,13 +294,7 @@ def upwardly():
                 "3Y": round(float(values['return3y']),2),
                 "url": "https://www.upwardly.in/en/mutual-fund/{}".format(values['slug'])
             })
-        else:
-            resp.append({
-                "fund_name": values['name'],
-                "1Y": 0,
-                "3Y": 0,
-                "url": "https://www.upwardly.in/en/mutual-fund/{}".format(values['slug'])
-            })
+        
     return resp
 
 
